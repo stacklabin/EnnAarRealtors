@@ -1,0 +1,40 @@
+{
+  "name": "ennaarrealtors",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.5.1",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.3.0",
+    "@tinymce/tinymce-react": "^3.12.4",
+    "axios": "^0.21.1",
+    "cloudinary": "^1.25.2",
+    "cloudinary-react": "^1.7.0",
+    "framer-motion": "^4.1.4",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.4",
+    "next": "^10.1.3",
+    "next-auth": "^3.14.7",
+    "next-connect": "^0.10.1",
+    "nodemailer": "^6.5.0",
+    "nprogress": "^0.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-slideshow-image": "^3.4.6",
+    "react-web-share": "^1.1.0",
+    "slugify": "^1.5.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "raw-loader": "^4.0.2",
+    "tailwindcss": "^2.2.2"
+  }
+}
