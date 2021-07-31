@@ -194,8 +194,8 @@ export default function Homepage() {
                             )}
                             <span className="py-1 px-2 bg-blue-500 text-white rounded hover:bg-blue-600">
                               <Link
-                                as={`/property/${item._id}`}
-                                href="/property/+[id]"
+                                as={`/property/${item.name}`}
+                                href="/property/+[name]"
                               >
                                 View
                               </Link>
@@ -257,8 +257,8 @@ export default function Homepage() {
                           <h1>{item.name}</h1>
                           <span className="py-1 px-2 bg-blue-500 text-white rounded hover:bg-blue-600">
                             <Link
-                              as={`/property/${item._id}`}
-                              href="/property/+[id]"
+                              as={`/property/${item.name}`}
+                              href="/property/+[name]"
                             >
                               View
                             </Link>
