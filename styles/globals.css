@@ -2555,9 +2555,11 @@ select.error:focus,
   height: auto;
   text-align: center;
 } */
-.base-form-ab-sec {
-  padding-left: 300px;
-  padding-right: 300px;
+@media only screen and (min-width: 1200px) {
+  .base-form-ab-sec {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
 }
 .project-enquiry-form-new {
   height: auto;
