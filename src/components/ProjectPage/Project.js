@@ -48,7 +48,7 @@ export default function Project() {
       .post('/api/enquiry', data)
       .then((res) => {
         toast({
-          title: 'Submitted Data Successfully',
+          title: 'Thank You',
           description: res.data.message,
           status: 'success',
           duration: 3000,
