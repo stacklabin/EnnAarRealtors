@@ -15,11 +15,11 @@ import {
   useDisclosure,
   useToast,
 } from "@chakra-ui/react";
+import Iframe from 'react-iframe'
 
-
-export default function EnquiryForm({ calledBy }) {  
+export default function EnquiryForm({ calledBy }) {
   const toast = useToast();
-  const {isOpen,onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const rememberMe = localStorage.getItem('rememberMe') === 'true';
   const user = rememberMe ? localStorage.getItem('user') : '';
   const [name, setName] = useState("");
@@ -67,14 +67,14 @@ export default function EnquiryForm({ calledBy }) {
 
 
   const handlePageLoad = async () => {
-  if(rememberMe && user){}
-  else{
-    setTimeout(onOpen, 20000);
-  }
-};
+    if (rememberMe && user) { }
+    else {
+      setTimeout(onOpen, 20000);
+    }
+  };
 
   useEffect(() => {
-   
+
     if (calledBy === "propertyPage") {
       setTimeout(onOpen, 10000);
     }
@@ -83,7 +83,7 @@ export default function EnquiryForm({ calledBy }) {
 
 
   return (
-      <>
+    <>
       <Modal isOpen={isOpen} onClose={onClose} size="4xl">
         <ModalOverlay />
         <ModalContent>
@@ -142,7 +142,7 @@ export default function EnquiryForm({ calledBy }) {
                 <div className="text-center">
                   <h1 className="text-2xl font-bold">Enquiry Form</h1>
                 </div>
-                <div className="p-2 mb-2">
+                {/* <div className="p-2 mb-2">
                   <Input
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -186,9 +186,15 @@ export default function EnquiryForm({ calledBy }) {
                       Terms and Conditions
                     </span>
                   </Link>
-                </p>
+                </p>*/}
+                <Iframe url="https://account.solidperformers.com/captureleads/MTg5"
+                  id="leadTracking"
+                  width="450px"
+                  height="450px"
+                  display="initial"
+                  position="relative" />
               </ModalBody>
-              <ModalFooter>
+              {/* <ModalFooter>
                 <Button colorScheme="red" mr={3} onClick={onClose}>
                   Cancel
                 </Button>
@@ -199,7 +205,7 @@ export default function EnquiryForm({ calledBy }) {
                 >
                   Send
                 </Button>
-              </ModalFooter>
+              </ModalFooter> */}
             </div>
           </section>
         </ModalContent>
