@@ -155,42 +155,45 @@ export default function ContactUs({ calledBy }) {
                   </div>
                 </div>
                 <div className="p-2 mb-2">
-                  <Input
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="Name"
-                    variant="flushed"
-                    required
-                  />
-                </div>
-                <div className="p-2 mb-2">
-                  <Input
-                    value={email}
-                    required
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Email"
-                    variant="flushed"
-                  />
-                </div>
-                <div className="p-2 mb-2">
-                  <Input
-                    required
-                    type="number"
-                    value={contact}
-                    onChange={(e) => setContact(e.target.value)}
-                    placeholder="Contact Number"
-                    variant="flushed"
-                  />
-                </div>
-                <div className="p-2 mb-2">
-                  <Textarea
-                    required
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    variant="flushed"
-                    placeholder="Message"
-                  ></Textarea>
-                </div>
+                  
+                  
+                  <iframe  id="leadTracking" src="https://account.solidperformers.com/captureleads/MTkw" border="0" style="border:0px;height:600px;width:100%"></iframe>
+//                   <Input
+//                     value={name}
+//                     onChange={(e) => setName(e.target.value)}
+//                     placeholder="Name"
+//                     variant="flushed"
+//                     required
+//                   />
+//                 </div>
+//                 <div className="p-2 mb-2">
+//                   <Input
+//                     value={email}
+//                     required
+//                     onChange={(e) => setEmail(e.target.value)}
+//                     placeholder="Email"
+//                     variant="flushed"
+//                   />
+//                 </div>
+//                 <div className="p-2 mb-2">
+//                   <Input
+//                     required
+//                     type="number"
+//                     value={contact}
+//                     onChange={(e) => setContact(e.target.value)}
+//                     placeholder="Contact Number"
+//                     variant="flushed"
+//                   />
+//                 </div>
+//                 <div className="p-2 mb-2">
+//                   <Textarea
+//                     required
+//                     value={message}
+//                     onChange={(e) => setMessage(e.target.value)}
+//                     variant="flushed"
+//                     placeholder="Message"
+//                   ></Textarea>
+//                 </div>
                 <p>
                   By contacting us you agree to our{" "}
                   <Link href="/terms-condition" passHref>
