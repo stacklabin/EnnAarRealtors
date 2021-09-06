@@ -109,11 +109,11 @@ export default function ContactUs({ calledBy }) {
                 >
                   <FaTwitter />
                 </a>
-                <a
-                  href="https://www.linkedin.com/company/enn-aar-realtors/"
-                  target="_blank"
-                  className="m-2"
-                >
+//                 <a
+//                   href="https://www.linkedin.com/company/enn-aar-realtors/"
+//                   target="_blank"
+//                   className="m-2"
+//                 >
                   <FaLinkedin />
                 </a>
               </div>
