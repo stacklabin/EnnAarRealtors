@@ -905,6 +905,20 @@ export default function Property() {
               <th className='bc-grn'>Price</th>
               {/* <th className="bc-gry red">Status</th> */}
             </tr>
+
+
+            {result.oneArea ? (
+              <tr>
+                <td className='bc-blue'>1 BHK Flat</td>
+                <td className='bc-ylo'>{result.oneArea}</td>
+                <td className='bc-grn'>On Request</td>
+                {/* <td className="bc-gry red">Possession Soon</td> */}
+              </tr>
+            ) : (
+              <></>
+            )}
+
+
             {result.twoArea ? (
               <tr>
                 <td className='bc-blue'>2 BHK Flat</td>
