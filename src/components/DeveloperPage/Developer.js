@@ -54,7 +54,7 @@ export default function Developer() {
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta charSet="utf-8" />
-                <title>Enn Arr Realtors - {result.title} </title>
+                <title> {result.title} </title>
                 <meta name="description" content={result.description}></meta> 
                 <meta property="og:title" content={result.title} key="ogtitle" />
                 <meta property="og:description" content={result.description} key="ogdesc" />
