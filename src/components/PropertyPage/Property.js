@@ -32,6 +32,7 @@ import {
 import { MdDesktopMac, MdGroup, MdRestaurant } from 'react-icons/md'
 import Header from '../Header'
 export default function Property() {
+  const [one, setone] = useState(false)
   const [two, settwo] = useState(false)
   const [three, setthree] = useState(false)
   const [four, setfour] = useState(false)
@@ -68,9 +69,21 @@ export default function Property() {
     indicators: true,
     easing: 'ease',
   }
+  
+  function setOneTrue() {
+    // console.log("setting two true")
+    setone(true)
+    settwo(false)
+    setthree(false)
+    setfour(false)
+    setfive(false)
+    setplot(false)
+    setvilla(false)
+  }
 
   function setTwoTrue() {
     // console.log("setting two true")
+    setone(false)
     settwo(true)
     setthree(false)
     setfour(false)
@@ -79,6 +92,7 @@ export default function Property() {
     setvilla(false)
   }
   function setThreeTrue() {
+    setone(false)
     settwo(false)
     setthree(true)
     setfour(false)
@@ -87,6 +101,7 @@ export default function Property() {
     setvilla(false)
   }
   function setFourTrue() {
+    setone(false)
     settwo(false)
     setthree(false)
     setfour(true)
@@ -95,6 +110,7 @@ export default function Property() {
     setvilla(false)
   }
   function setFiveTrue() {
+    setone(false)
     settwo(false)
     setthree(false)
     setfour(false)
@@ -103,6 +119,7 @@ export default function Property() {
     setvilla(false)
   }
   function setPlotTrue() {
+    setone(false)
     settwo(false)
     setthree(false)
     setfour(false)
@@ -111,6 +128,7 @@ export default function Property() {
     setvilla(false)
   }
   function setVillaTrue() {
+    setone(false)
     settwo(false)
     setthree(false)
     setfour(false)
@@ -453,10 +471,10 @@ export default function Property() {
           
           {result.one ? (
                 <button
-                  onClick={() => setTwoTrue()}
+                  onClick={() => setOneTrue()}
                   className={
                     'text-sm ws-full pointer-on-hover mb-4 md:text-md px-2 py-2 rounded-lg border-solid border-2 justify-between d-block ' +
-                    (two
+                    (one
                       ? 'bg-green-500 text-white'
                       : 'border-green-300 text-gray-500')
                   }
@@ -1079,7 +1097,7 @@ export default function Property() {
             )}
           </table>
           {/* <p className='blk small calign'>
-            ** Rates revising soon. Price mentioned above is basic sale price
+            ** Rates revising soon. Price mentitd above is basic sale price
             only, other charges extra.
           </p> */}
         </div>
