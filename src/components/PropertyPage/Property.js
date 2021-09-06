@@ -919,16 +919,16 @@ export default function Property() {
             )}
 
 
-            {result.twoArea ? (
-              <tr>
-                <td className='bc-blue'>2 BHK Flat</td>
-                <td className='bc-ylo'>{result.twoArea}</td>
-                <td className='bc-grn'>On Request</td>
-                {/* <td className="bc-gry red">Possession Soon</td> */}
-              </tr>
-            ) : (
-              <></>
-            )}
+//             {result.twoArea ? (
+//               <tr>
+//                 <td className='bc-blue'>2 BHK Flat</td>
+//                 <td className='bc-ylo'>{result.twoArea}</td>
+//                 <td className='bc-grn'>On Request</td>
+//                 {/* <td className="bc-gry red">Possession Soon</td> */}
+//               </tr>
+//             ) : (
+//               <></>
+//             )}
             {result.twoAreaUtility ? (
               <tr>
                 <td className='bc-blue'>2 BHK plus Utility</td>
