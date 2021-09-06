@@ -149,7 +149,7 @@ export default function ContactUs({ calledBy }) {
                         <MdEmail />
                       </div>
                       <div className="text-xs  p-1">
-                        <p>ennaarrealtors@gmail.com</p>
+//                         <p>ennaarrealtors@gmail.com</p>
                       </div>
                     </div>
                   </div>
