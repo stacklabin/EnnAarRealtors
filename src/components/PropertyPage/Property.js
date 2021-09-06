@@ -449,6 +449,25 @@ export default function Property() {
           <section>
             <p className='text-md font-bold py-4'>Floor Plan</p>
             <div className='update slider grid grid-cols-4 gap-4'>
+          
+          
+          {result.one ? (
+                <button
+                  onClick={() => setTwoTrue()}
+                  className={
+                    'text-sm ws-full pointer-on-hover mb-4 md:text-md px-2 py-2 rounded-lg border-solid border-2 justify-between d-block ' +
+                    (two
+                      ? 'bg-green-500 text-white'
+                      : 'border-green-300 text-gray-500')
+                  }
+                >
+                  <p className='block w-full fleft'>1 BHK</p>
+
+                  <p className='block w-full fleft'>Size: {result.oneArea}</p>
+                </button>
+              ) : (
+                <></>
+              )}
               {result.two ? (
                 <button
                   onClick={() => setTwoTrue()}
