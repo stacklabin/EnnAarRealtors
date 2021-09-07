@@ -245,9 +245,7 @@ export default function EnquiryForm({ calledBy },props) {
               </div>
               
             </div>
-            <div className="bg-transparent-white py-4 px-4 w-full md:w-10/12 lg:w-10/12">
-              <div>
-              
+            <div className="bg-transparent-white py-4 px-4 w-full md:w-10/12 lg:w-10/12">              
               <Iframe url="https://account.solidperformers.com/captureleads/MTg5"
                   id="leadTracking"
                   width="450px"
