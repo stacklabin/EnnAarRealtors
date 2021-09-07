@@ -172,9 +172,8 @@ export default function ContactUs({ calledBy }) {
                   id="leadTracking"
                   width="100%"
                   height="600px
-                  position="relative" />
+                  />
 
-<iframe  id="leadTracking" src="https://account.solidperformers.com/captureleads/MTkw" border="0" style="border:0px;height:600px;width:100%"></iframe>
                 
 
               </ModalBody>
