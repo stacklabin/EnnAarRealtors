@@ -167,12 +167,9 @@ export default function ContactUs({ calledBy }) {
                     </span>
                   </Link>
                 </p>*/}
-                <Iframe url="https://account.solidperformers.com/captureleads/MTg5"
-                  id="leadTracking"
-                  width="450px"
-                  height="450px"
-                  display="initial"
-                  position="relative" />
+                
+
+
               </ModalBody>
               {/* <ModalFooter>
                 <Button colorScheme="red" mr={3} onClick={onClose}>
