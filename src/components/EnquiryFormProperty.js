@@ -204,6 +204,7 @@ export default function EnquiryForm({ calledBy },props) {
               </div>  */}
               
             </div>
+            </div>
           
           </section>
         </div>
