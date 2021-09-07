@@ -155,7 +155,36 @@ export default function ContactUs({ calledBy }) {
                   </div>
                 </div>
 
-                    <iframe  id="leadTracking" src="https://account.solidperformers.com/captureleads/MTkw" border="0" style="border:0px;height:600px;width:100%"></iframe>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
+<div id="container"></div>
+
+                const Component = React.createClass({
+  iframe: function () {
+    return {
+      __html: this.props.iframe
+    }
+  },
+
+  render: function() {
+    return (
+      <div>
+        <div dangerouslySetInnerHTML={ this.iframe() } />
+      </div>
+    );
+  }
+});
+
+const iframe = '<iframe  id="leadTracking" src="https://account.solidperformers.com/captureleads/MTkw" border="0" style="border:0px;height:600px;width:100%"></iframe>'; 
+
+ReactDOM.render(
+  <Component iframe={iframe} />,
+  document.getElementById('container')
+);
+
+
+
+                    
 
                 {/* <div className="p-2 mb-2">
                   
