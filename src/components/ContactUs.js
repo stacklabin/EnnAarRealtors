@@ -175,7 +175,6 @@ export default function ContactUs({ calledBy }) {
                   id="leadTracking"
                   width="450px"
                   height="450px"
-                  display="initial"
                   position="relative" />
 
               </ModalBody>
