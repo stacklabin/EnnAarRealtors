@@ -7,7 +7,7 @@ export default function AboutUsPage() {
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta charSet='utf-8' />
-        <title>About Us - EnnaarRealtors</title>
+        <title>About Us - Enn Aar group</title>
         <meta name='description' content='Description here'></meta>
         <meta property='og:title' content='Title here' key='ogtitle' />
         <meta
