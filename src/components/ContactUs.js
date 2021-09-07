@@ -75,7 +75,6 @@ export default function ContactUs({ calledBy }) {
               
                         <iframe  id="leadTracking" src="https://account.solidperformers.com/captureleads/MTkw" border="0" style="border:0px;height:600px;width:100%"></iframe>
                        
-               </div>
                
 
 {/*<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
@@ -166,6 +165,7 @@ ReactDOM.render(
                   </Link>
                 </p>
               </ModalBody>
+              </div>
               <ModalFooter>
                 <Button colorScheme="red" mr={3} onClick={onClose}>
                   Cancel
