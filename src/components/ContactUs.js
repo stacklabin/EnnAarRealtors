@@ -197,7 +197,6 @@ ReactDOM.render(
                   Send
                 </Button>
               </ModalFooter>
-            </div>
           </section>
         </ModalContent>
       </Modal>
