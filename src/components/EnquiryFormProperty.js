@@ -113,11 +113,7 @@ export default function EnquiryForm({ calledBy },props) {
            <FaChevronDown className={` ${cshow ? 'ashow': 'ahide'}`} />
            </Button> */}
            
-            <img
-              className="background-image lighter"
-              src="/images/enquiryform.jpg"
-              alt="enn arr realtors"
-            />
+            
             <div className="hidden text-white md:flex flex-col justify-between md:w-2/12 lg:w-2/12">
               <div className="text-3xl font-bold p-4 pt-8">
                 <p
@@ -138,59 +134,13 @@ export default function EnquiryForm({ calledBy },props) {
               
             </div>
             <div className="bg-transparent-white py-4 px-4 w-full md:w-10/12 lg:w-10/12">
-              <div>
                 
-                <div className="p-2 mb-2 ">
-                  <Input
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="Name"
-                    variant="flushed"
-                    required
-                  />
-                </div>
-                <div className="p-2 mb-2">
-                  <Input
-                    value={email}
-                    required
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Email"
-                    variant="flushed"
-                  />
-                </div>
-                <div className="p-2 mb-2">
-                  <Input
-                    required
-                    type="number"
-                    value={contact}
-                    onChange={(e) => setContact(e.target.value)}
-                    placeholder="Contact Number"
-                    variant="flushed"
-                  />
-                </div>
-                <div className="p-2 mb-2">
-                  <Textarea
-                    required
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    variant="flushed"
-                    placeholder="Message"
-                   rows="2"></Textarea>
-                </div>
-              
-              </div>
-              <div>
-                <Button colorScheme="red" mr={3} onClick={handleClose}>
-                  Cancel
-                </Button>
-                <Button
-                  colorScheme="teal"
-                  onClick={handleSubmit}
-                  variant="solid"
-                >
-                  Submit
-                </Button>
-              </div>
+                <Iframe url="https://account.solidperformers.com/captureleads/MTg5"
+                  id="leadTracking"
+                  width="450px"
+                  height="450px"
+                  display="initial"
+                  position="relative" />
               
             </div>
           
@@ -233,59 +183,12 @@ export default function EnquiryForm({ calledBy },props) {
               
             </div>
             <div className="bg-transparent-white py-4 px-4 w-full md:w-10/12 lg:w-10/12">
-              <div>
-                
-                <div className="p-2 mb-2 ">
-                  <Input
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="Name"
-                    variant="flushed"
-                    required
-                  />
-                </div>
-                <div className="p-2 mb-2">
-                  <Input
-                    value={email}
-                    required
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Email"
-                    variant="flushed"
-                  />
-                </div>
-                <div className="p-2 mb-2">
-                  <Input
-                    required
-                    type="number"
-                    value={contact}
-                    onChange={(e) => setContact(e.target.value)}
-                    placeholder="Contact Number"
-                    variant="flushed"
-                  />
-                </div>
-                <div className="p-2 mb-2">
-                  <Textarea
-                    required
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    variant="flushed"
-                    placeholder="Message"
-                   rows="2"></Textarea>
-                </div>
-              
-              </div>
-              <div>
-                <Button colorScheme="red" mr={3} onClick={handleClose}>
-                  Cancel
-                </Button>
-                <Button
-                  colorScheme="teal"
-                  onClick={handleSubmit}
-                  variant="solid"
-                >
-                  Submit
-                </Button>
-              </div>
+               <Iframe url="https://account.solidperformers.com/captureleads/MTg5"
+                  id="leadTracking"
+                  width="450px"
+                  height="450px"
+                  display="initial"
+                  position="relative" />
               
             </div>
           
