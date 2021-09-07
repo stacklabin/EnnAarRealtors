@@ -114,6 +114,12 @@ export default function EnquiryForm({ calledBy },props) {
            <FaChevronUp className={` ${cshow ? 'ahide': 'ashow'}`} />
            <FaChevronDown className={` ${cshow ? 'ashow': 'ahide'}`} />
            </Button> */}
+
+             <img
+              className="background-image lighter"
+              src="https://images.unsplash.com/photo-1601752943749-7dd8d89f407a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+              alt="enn arr group"
+            />
            
             
             <div className="hidden text-white md:flex flex-col justify-between md:w-2/12 lg:w-2/12">
@@ -139,7 +145,7 @@ export default function EnquiryForm({ calledBy },props) {
                 
                 <Iframe url="https://account.solidperformers.com/captureleads/MTg5"
                   id="leadTracking"
-                  width="450px"
+                  width="270px"
                   height="450px"
                   display="initial"
                   position="relative" />
@@ -159,12 +165,14 @@ export default function EnquiryForm({ calledBy },props) {
            <FaChevronUp className={` ${cshow ? 'ahide': 'ashow'}`} />
            <FaChevronDown className={` ${cshow ? 'ashow': 'ahide'}`} />
            </Button> */}
-           
-            <img
+
+             <img
               className="background-image lighter"
-              src="/images/enquiryform.jpg"
+              src="https://images.unsplash.com/photo-1601752943749-7dd8d89f407a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
               alt="enn arr realtors"
             />
+           
+            
             <div className="hidden text-white md:flex flex-col justify-between md:w-2/12 lg:w-2/12">
               <div className="text-3xl font-bold p-4 pt-8">
                 <p
@@ -187,7 +195,7 @@ export default function EnquiryForm({ calledBy },props) {
             <div className="bg-transparent-white py-4 px-4 w-full md:w-10/12 lg:w-10/12">
                <Iframe url="https://account.solidperformers.com/captureleads/MTg5"
                   id="leadTracking"
-                  width="450px"
+                  width="270px"
                   height="450px"
                   display="initial"
                   position="relative" />
