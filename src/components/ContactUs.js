@@ -109,11 +109,11 @@ export default function ContactUs({ calledBy }) {
                 >
                   <FaTwitter />
                 </a>
-//                 <a
-//                   href="https://www.linkedin.com/company/enn-aar-realtors/"
-//                   target="_blank"
-//                   className="m-2"
-//                 >
+                <a
+                  href="https://www.linkedin.com/company/enn-aar-realtors/"
+                  target="_blank"
+                  className="m-2"
+                >
                   <FaLinkedin />
                 </a>
               </div>
@@ -149,7 +149,7 @@ export default function ContactUs({ calledBy }) {
                         <MdEmail />
                       </div>
                       <div className="text-xs  p-1">
-//                         <p>ennaarrealtors@gmail.com</p>
+                        <p>ennaarrealtors@gmail.com</p>
                       </div>
                     </div>
                   </div>
@@ -166,34 +166,34 @@ export default function ContactUs({ calledBy }) {
                     required
                   />
                 </div>
-//                 <div className="p-2 mb-2">
-//                   <Input
-//                     value={email}
-//                     required
-//                     onChange={(e) => setEmail(e.target.value)}
-//                     placeholder="Email"
-//                     variant="flushed"
-//                   />
-//                 </div>
-//                 <div className="p-2 mb-2">
-//                   <Input
-//                     required
-//                     type="number"
-//                     value={contact}
-//                     onChange={(e) => setContact(e.target.value)}
-//                     placeholder="Contact Number"
-//                     variant="flushed"
-//                   />
-//                 </div>
-//                 <div className="p-2 mb-2">
-//                   <Textarea
-//                     required
-//                     value={message}
-//                     onChange={(e) => setMessage(e.target.value)}
-//                     variant="flushed"
-//                     placeholder="Message"
-//                   ></Textarea>
-//                 </div>
+                <div className="p-2 mb-2">
+                  <Input
+                    value={email}
+                    required
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Email"
+                    variant="flushed"
+                  />
+                </div>
+                <div className="p-2 mb-2">
+                  <Input
+                    required
+                    type="number"
+                    value={contact}
+                    onChange={(e) => setContact(e.target.value)}
+                    placeholder="Contact Number"
+                    variant="flushed"
+                  />
+                </div>
+                <div className="p-2 mb-2">
+                  <Textarea
+                    required
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    variant="flushed"
+                    placeholder="Message"
+                  ></Textarea>
+                </div>
                 <p>
                   By contacting us you agree to our{" "}
                   <Link href="/terms-condition" passHref>
