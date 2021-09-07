@@ -55,7 +55,7 @@ export default function EnquiryForm({ calledBy }) {
       })
       .catch((err) => {
         toast({
-//           title: "Some error occured",
+          title: "Some error occured",
           description: err.response.data,
           status: "error",
           duration: 3000,
