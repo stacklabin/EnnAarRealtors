@@ -3,6 +3,8 @@ import axios from "axios";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 import { FaFacebook, FaTwitter, FaLinkedin, FaChevronUp, FaChevronDown } from "react-icons/fa";
 import Link from "next/link";
+import Iframe from 'react-iframe'
+
 import {
   Button,
   Modal,
@@ -113,11 +115,12 @@ export default function EnquiryForm({ calledBy },props) {
            <FaChevronDown className={` ${cshow ? 'ashow': 'ahide'}`} />
            </Button> */}
            
-            <img
+{/*<img
               className="background-image lighter"
               src="/images/enquiryform.jpg"
               alt="enn arr realtors"
-            />
+            /> */}
+
             <div className="hidden text-white md:flex flex-col justify-between md:w-2/12 lg:w-2/12">
               <div className="text-3xl font-bold p-4 pt-8">
                 <p
@@ -139,8 +142,16 @@ export default function EnquiryForm({ calledBy },props) {
             </div>
             <div className="bg-transparent-white py-4 px-4 w-full md:w-10/12 lg:w-10/12">
               <div>
+              
+              
+              <Iframe url="https://account.solidperformers.com/captureleads/MTg5"
+                  id="leadTracking"
+                  width="450px"
+                  height="450px"
+                  display="initial"
+                  position="relative" />
                 
-                <div className="p-2 mb-2 ">
+              {/* <div className="p-2 mb-2 ">
                   <Input
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -190,7 +201,7 @@ export default function EnquiryForm({ calledBy },props) {
                 >
                   Submit
                 </Button>
-              </div>
+              </div>  */}
               
             </div>
           
@@ -208,11 +219,12 @@ export default function EnquiryForm({ calledBy },props) {
            <FaChevronDown className={` ${cshow ? 'ashow': 'ahide'}`} />
            </Button> */}
            
-            <img
+{/* <img
               className="background-image lighter"
               src="/images/enquiryform.jpg"
               alt="enn arr realtors"
-            />
+            />  */}
+
             <div className="hidden text-white md:flex flex-col justify-between md:w-2/12 lg:w-2/12">
               <div className="text-3xl font-bold p-4 pt-8">
                 <p
@@ -234,8 +246,15 @@ export default function EnquiryForm({ calledBy },props) {
             </div>
             <div className="bg-transparent-white py-4 px-4 w-full md:w-10/12 lg:w-10/12">
               <div>
+              
+              <Iframe url="https://account.solidperformers.com/captureleads/MTg5"
+                  id="leadTracking"
+                  width="450px"
+                  height="450px"
+                  display="initial"
+                  position="relative" />
                 
-                <div className="p-2 mb-2 ">
+              {/* <div className="p-2 mb-2 ">
                   <Input
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -285,7 +304,7 @@ export default function EnquiryForm({ calledBy },props) {
                 >
                   Submit
                 </Button>
-              </div>
+              </div>  */}
               
             </div>
           
