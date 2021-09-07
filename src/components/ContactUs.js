@@ -73,8 +73,12 @@ export default function ContactUs({ calledBy }) {
             <div className="bg-white py-4 w-full md:w-10/12 lg:w-8/12">
               <ModalBody>
               
-                        <iframe  id="leadTracking" src="https://account.solidperformers.com/captureleads/MTkw" border="0" style="border:0px;height:600px;width:100%"></iframe>
-                       
+           <Iframe url="https://account.solidperformers.com/captureleads/MTkw"
+                  id="leadTracking"
+                  width="450px"
+                  height="450px"
+                  display="initial"
+                  position="relative" />                       
                
 
 {/*<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
