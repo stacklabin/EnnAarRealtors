@@ -69,26 +69,7 @@ export default function ContactUs({ calledBy }) {
         <ModalOverlay />
         <ModalContent>
           <section className="halfpagebackground flex justify-end">
-            <img
-              className="background-image lighter"
-              src="https://images.unsplash.com/photo-1601752943749-7dd8d89f407a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-              alt="enn 
-                <a
-                  href="https://twitter.com/ENNAARREALTOR"
-                  target="_blank"
-                  className="m-2"
-                >
-                  <FaTwitter />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/enn-aar-realtors/"
-                  target="_blank"
-                  className="m-2"
-                >
-                  <FaLinkedin />
-                </a>
-              </div>
-            </div>
+            
             <div className="bg-white py-4 w-full md:w-10/12 lg:w-8/12">
               <ModalBody>
               
