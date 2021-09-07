@@ -4,6 +4,8 @@ import Head from 'next/head'
 import { Image } from 'cloudinary-react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import Iframe from 'react-iframe'
+
 import {
   Modal,
   ModalOverlay,
@@ -191,7 +193,8 @@ export default function Project() {
           <h1 className='text-2xl font-bold'>Enquiry Form</h1>
         </div>
         <div className='p-2 mb-2 base-form-ab-sec text-center'>
-          <Input
+        
+         {/* <Input
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder='Name'
@@ -238,7 +241,15 @@ export default function Project() {
         <div className='text-center base-form-ab-sec'>
           <Button colorScheme='teal' onClick={handleSubmit} variant='solid'>
             Send
-          </Button>
+          </Button> */}
+          
+           <Iframe url="https://account.solidperformers.com/captureleads/MTg5"
+                  id="leadTracking"
+                  width="450px"
+                  height="450px"
+                  display="initial"
+                  position="relative" />
+          
         </div>
       </section>
     </div>
