@@ -3,6 +3,8 @@ import axios from "axios";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
+import Iframe from 'react-iframe'
+
 import {
   Button,
   Modal,
