@@ -160,7 +160,7 @@ export default function Property() {
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta charSet='utf-8' />
-        <title>Enn Arr Realtors - {result.name} </title>
+        <title>{result.name} </title>
         <meta name='description' content={result.description}></meta>
         <meta property='og:title' content={result.name} key='ogtitle' />
         <meta
