@@ -159,17 +159,24 @@ export default function ContactUs({ calledBy }) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
 <div id="container"></div>
 
-                const Component = React.createClass({
-  iframe: function () {
-    return {
-      __html: this.props.iframe
-    }
-  },
+  const getAttrs = (iframeTag) => {
+  var doc = document.createElement('div');
+  doc.innerHTML = iframeTag;
 
+  const iframe = doc.getElementsByTagName('iframe')[0];
+  return [].slice
+    .call(iframe.attributes)
+    .reduce((attrs, element) => {
+      attrs[element.name] = element.value;
+      return attrs;
+    }, {});
+}
+
+const Component = React.createClass({
   render: function() {
     return (
       <div>
-        <div dangerouslySetInnerHTML={ this.iframe() } />
+        <iframe {...getAttrs(this.props.iframe) } />
       </div>
     );
   }
