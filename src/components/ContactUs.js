@@ -154,51 +154,7 @@ export default function ContactUs({ calledBy }) {
                     </div>
                   </div>
                 </div>
-                <div className="p-2 mb-2">
-                  <Input
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="Name"
-                    variant="flushed"
-                    required
-                  />
-                </div>
-                <div className="p-2 mb-2">
-                  <Input
-                    value={email}
-                    required
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Email"
-                    variant="flushed"
-                  />
-                </div>
-                <div className="p-2 mb-2">
-                  <Input
-                    required
-                    type="number"
-                    value={contact}
-                    onChange={(e) => setContact(e.target.value)}
-                    placeholder="Contact Number"
-                    variant="flushed"
-                  />
-                </div>
-                <div className="p-2 mb-2">
-                  <Textarea
-                    required
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    variant="flushed"
-                    placeholder="Message"
-                  ></Textarea>
-                </div>
-                <p>
-                  By contacting us you agree to our{" "}
-                  <Link href="/terms-condition" passHref>
-                    <span className="pointer-on-hover text-blue-500">
-                      Terms and Conditions
-                    </span>
-                  </Link>
-                </p>
+               
               </ModalBody>
               <ModalFooter>
                 <Button colorScheme="red" mr={3} onClick={onClose}>
