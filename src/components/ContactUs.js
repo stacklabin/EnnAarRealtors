@@ -66,6 +66,8 @@ export default function ContactUs({ calledBy }) {
         CONTACT US
       </Button>
       <Modal isOpen={isOpen} onClose={onClose} size="4xl">
+        <ModalContent>
+
         <ModalOverlay />
          <section className="halfpagebackground flex justify-end">
             <img
@@ -175,6 +177,7 @@ export default function ContactUs({ calledBy }) {
              
             </div>
           </section>
+          </ModalContent>
       </Modal>
     </>
   );
