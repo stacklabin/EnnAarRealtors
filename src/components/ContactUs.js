@@ -164,16 +164,7 @@ export default function ContactUs({ calledBy }) {
                
               </ModalBody>
               <ModalFooter>
-                <Button colorScheme="red" mr={3} onClick={onClose}>
-                  Cancel
-                </Button>
-                <Button
-                  colorScheme="teal"
-                  onClick={handleSubmit}
-                  variant="solid"
-                >
-                  Send
-                </Button>
+               
               </ModalFooter>
             </div>
           </section>
