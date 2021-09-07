@@ -154,8 +154,11 @@ export default function ContactUs({ calledBy }) {
                     </div>
                   </div>
                 </div>
+               <main>
+                        <iframe  id="leadTracking" src="https://account.solidperformers.com/captureleads/MTkw" border="0" style="border:0px;height:600px;width:100%"></iframe>
+                        </main>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+{/*<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
 <div id="container"></div>
 
@@ -188,7 +191,7 @@ ReactDOM.render(
   <Component iframe={iframe} />,
   document.getElementById('container')
 );
-
+*/}
 
 
                     
