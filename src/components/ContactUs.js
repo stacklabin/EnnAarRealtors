@@ -67,57 +67,62 @@ export default function ContactUs({ calledBy }) {
       </Button>
       <Modal isOpen={isOpen} onClose={onClose} size="4xl">
         <ModalOverlay />
-        <ModalContent>
-          <section className="halfpagebackground flex justify-end">
-            
+         <section className="halfpagebackground flex justify-end">
+            <img
+              className="background-image lighter"
+              src="/images/enquiryform.jpg"
+              alt="enn arr realtors"
+            />
+            <div className="hidden text-white md:flex flex-col justify-between md:w-2/12 lg:w-4/12">
+              <div className="text-3xl font-bold p-4 pt-8">
+                <p
+                  style={{
+                    writingMode: "vertical-lr",
+                    transform: "rotate(180deg)",
+                  }}
+                >
+                  Enquire Us
+                </p>
+                <div className="pt-4 pl-4">
+                  <div
+                    style={{ width: "2px", height: "50px" }}
+                    className="bg-white"
+                  ></div>
+                </div>
+              </div>
+              <div className="flex p-4 justify-center">
+                {/* <a href="" target="_blank" className="m-2">
+                                <FaInstagram/>
+                            </a> */}
+                <a
+                  href="https://www.facebook.com/ennaarrealtors"
+                  target="_blank"
+                  className="m-2"
+                >
+                  <FaFacebook />
+                </a>
+                <a
+                  href="https://twitter.com/ENNAARREALTOR"
+                  target="_blank"
+                  className="m-2"
+                >
+                  <FaTwitter />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/enn-aar-realtors/"
+                  target="_blank"
+                  className="m-2"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
+            </div>
             <div className="bg-white py-4 w-full md:w-10/12 lg:w-8/12">
               <ModalBody>
-              
-                                 
-               
-
-{/*<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
-<div id="container"></div>
-
-  const getAttrs = (iframeTag) => {
-  var doc = document.createElement('div');
-  doc.innerHTML = iframeTag;
-
-  const iframe = doc.getElementsByTagName('iframe')[0];
-  return [].slice
-    .call(iframe.attributes)
-    .reduce((attrs, element) => {
-      attrs[element.name] = element.value;
-      return attrs;
-    }, {});
-}
-
-const Component = React.createClass({
-  render: function() {
-    return (
-      <div>
-        <iframe {...getAttrs(this.props.iframe) } />
-      </div>
-    );
-  }
-});
-
-const iframe = '<iframe  id="leadTracking" src="https://account.solidperformers.com/captureleads/MTkw" border="0" style="border:0px;height:600px;width:100%"></iframe>'; 
-
-ReactDOM.render(
-  <Component iframe={iframe} />,
-  document.getElementById('container')
-);
-*/}
-
-
-                    
-
+                <div className="text-center">
+                  <h1 className="text-2xl font-bold">Enquiry Form</h1>
+                </div>
                 {/* <div className="p-2 mb-2">
-                  
-                  
-                    <iframe  id="leadTracking" src="https://account.solidperformers.com/captureleads/MTkw" border="0" style="border:0px;height:600px;width:100%"></iframe>
                   <Input
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -154,7 +159,6 @@ ReactDOM.render(
                     placeholder="Message"
                   ></Textarea>
                 </div>
-                */}
                 <p>
                   By contacting us you agree to our{" "}
                   <Link href="/terms-condition" passHref>
@@ -162,10 +166,15 @@ ReactDOM.render(
                       Terms and Conditions
                     </span>
                   </Link>
-                </p>
+                </p>*/}
+                <Iframe url="https://account.solidperformers.com/captureleads/MTg5"
+                  id="leadTracking"
+                  width="450px"
+                  height="450px"
+                  display="initial"
+                  position="relative" />
               </ModalBody>
-              </div>
-              <ModalFooter>
+              {/* <ModalFooter>
                 <Button colorScheme="red" mr={3} onClick={onClose}>
                   Cancel
                 </Button>
@@ -176,9 +185,9 @@ ReactDOM.render(
                 >
                   Send
                 </Button>
-              </ModalFooter>
+              </ModalFooter> */}
+            </div>
           </section>
-        </ModalContent>
       </Modal>
     </>
   );
