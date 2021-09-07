@@ -157,7 +157,7 @@ export default function ContactUs({ calledBy }) {
                 <div className="p-2 mb-2">
                   
                   
-                  <iframe  id="leadTracking" src="https://account.solidperformers.com/captureleads/MTkw" border="0" style="border:0px;height:600px;width:100%"></iframe>
+                  {/*  <iframe  id="leadTracking" src="https://account.solidperformers.com/captureleads/MTkw" border="0" style="border:0px;height:600px;width:100%"></iframe>
                   <Input
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -194,6 +194,7 @@ export default function ContactUs({ calledBy }) {
                     placeholder="Message"
                   ></Textarea>
                 </div>
+                */}
                 <p>
                   By contacting us you agree to our{" "}
                   <Link href="/terms-condition" passHref>
