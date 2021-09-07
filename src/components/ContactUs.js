@@ -171,7 +171,7 @@ export default function ContactUs({ calledBy }) {
                 <Iframe url="https://account.solidperformers.com/captureleads/MTkw"
                   id="leadTracking"
                   width="100%"
-                  height="600px
+                  height="600px"
                   />
 
                 
