@@ -158,14 +158,14 @@ export default function ContactUs({ calledBy }) {
                   
                   
                   <iframe  id="leadTracking" src="https://account.solidperformers.com/captureleads/MTkw" border="0" style="border:0px;height:600px;width:100%"></iframe>
-//                   <Input
-//                     value={name}
-//                     onChange={(e) => setName(e.target.value)}
-//                     placeholder="Name"
-//                     variant="flushed"
-//                     required
-//                   />
-//                 </div>
+                  <Input
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Name"
+                    variant="flushed"
+                    required
+                  />
+                </div>
 //                 <div className="p-2 mb-2">
 //                   <Input
 //                     value={email}
