@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import TrendingCard from "./TrendingCard";
+import TrendingCardOmex from "./TrendingCardOmex";
+
 import { Skeleton } from "@chakra-ui/react";
 export default function TrendingProjectsSectionOmex({ heading, type }) {
   const [trendingPropertyList, setTrendingPropertyList] = useState([]);
@@ -31,7 +33,7 @@ export default function TrendingProjectsSectionOmex({ heading, type }) {
           " text-center font-bold text-2xl p-4"
         }
       >
-        {heading}
+        All Omex Projects
       </h2>
       <div className="cardContainers flex justify-center flex-wrap">
         {!loading ? (
