@@ -183,7 +183,7 @@ export default function Project() {
       />
         
       {devs.map((item) => {
-            count =  1
+            count =  count + 1
             return (
               <div
                 key={item._id}
