@@ -124,7 +124,7 @@ export default function Project() {
       <section className='p-4 flex justify-center'>
         <div>
           {devs.map((item) => {
-            count = count + 1
+            count =  1
             return (
               <div
                 key={item._id}
@@ -173,6 +173,12 @@ export default function Project() {
                   </div>
                 </div>
               </div>
+              
+              <TrendingProjectsSection
+        heading='Trending Residential Listings'
+        limit={4}
+        type='residential'
+      />
             )
           })}
         </div>
