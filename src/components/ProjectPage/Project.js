@@ -178,7 +178,7 @@ export default function Project() {
 
        <TrendingProjectsSectionOmex
         heading='Trending Residential Listings'
-        limit={10}
+        limit='15'
         type='residential'
       />
         
