@@ -126,13 +126,13 @@ export default function Project() {
     
     
          <div
-                key={dev._id[0]}
+                key='60bb45935b781c0618d45f88'
                 className='scale-on-hover-parent card w-full mb-12 flex flex-wrap justify-evenly'
               >
                 <div
                   className={
-                    'w-full md:w-6/12 lg:w-5/12 overflow-hidden h-full order-1 ' +
-                    (count % 2 === 0 ? 'md:order-1' : 'md:order-3')
+                    'w-full md:w-6/12 lg:w-5/12 overflow-hidden h-full order-1 ' + 'md:order-1'
+                    
                   }
                 >
                   <Image
@@ -141,12 +141,12 @@ export default function Project() {
                     width='100%'
                     height='100%'
                     crop='scale'
-                    publicId={devs.imageUrl[0]}
+                    publicId= 'https://res.cloudinary.com/enn-aar-group/image/upload/v1629091670/developers/WhatsApp_Image_2021-08-15_at_8.54.58_PM_we7unl.jpg'
                   />
                 </div>
                 <div className='w-full md:w-6/12 lg:w-5/12 px-4 order-2'>
                   <h1 className='text-3xl font-normal -mb-4 pt-4'>
-                    {devs.title[0]}
+                    Omaxe New Chandigarh
                   </h1>
                   <div>
                     <span
@@ -159,13 +159,14 @@ export default function Project() {
                     ></span>
                   </div>
                   <p className='text-xs md:text-sm font-light pt-2'>
-                    {devs.description[0]}
+                    Omaxe has planned an all-inclusive township in the emerging hotspot city, New Chandigarh. Spread over a vast area of a whopping 1000 acres, the project compromises both lavish residential homes and modern commercial spaces beholding different specifications to fit the precise requirements of your next home and office. The project holds state-of-the-art facilities required to lead a modern lifestyle now, and in the future – from hotels, retails, entertainment zones to a lush green environment that promises a seamless, laid-back environment. 
+                    The place promises to bring global living to its citizens.
                   </p>
 
                   <div className='bg-black text-white inline-block px-4 py-1 my-4 hover:bg-gray-700'>
                     <Link
-                      as={`/developers/${devs.title[0]}`}
-                      href='/developers/+[title]'
+                      as={`/developers/Omaxe New Chandigarh`}
+                      href='/developers/Omaxe New Chandigarh'
                     >
                       Know More
                     </Link>
