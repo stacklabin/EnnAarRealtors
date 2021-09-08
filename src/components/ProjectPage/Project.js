@@ -181,6 +181,11 @@ export default function Project() {
         limit='15'
         type='residential'
       />
+          
+         <div>
+             <br/>
+             <br/>
+          </div>
         
       {devs.map((item) => {
             count =  count + 1
