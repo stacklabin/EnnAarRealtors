@@ -123,7 +123,56 @@ export default function Project() {
       </section>
       <section className='p-4 flex justify-center'>
         <div>
-          {devs.map((item) => {
+    
+    
+         <div
+                key={dev._id[0]}
+                className='scale-on-hover-parent card w-full mb-12 flex flex-wrap justify-evenly'
+              >
+                <div
+                  className={
+                    'w-full md:w-6/12 lg:w-5/12 overflow-hidden h-full order-1 ' +
+                    (count % 2 === 0 ? 'md:order-1' : 'md:order-3')
+                  }
+                >
+                  <Image
+                    cloudName='enn-aar-group'
+                    className='scale-on-hover-image overflow-hidden object-cover w-full h-full'
+                    width='100%'
+                    height='100%'
+                    crop='scale'
+                    publicId={dev.imageUrl[0]}
+                  />
+                </div>
+                <div className='w-full md:w-6/12 lg:w-5/12 px-4 order-2'>
+                  <h1 className='text-3xl font-normal -mb-4 pt-4'>
+                    {item.title}
+                  </h1>
+                  <div>
+                    <span
+                      style={{ minWidth: '100px' }}
+                      className='bg-black pb-1 inline-block'
+                    ></span>
+                    <span
+                      style={{ minWidth: '100px' }}
+                      className='bg-gray-300 pb-1 inline-block'
+                    ></span>
+                  </div>
+                  <p className='text-xs md:text-sm font-light pt-2'>
+                    {dev.description[0]}
+                  </p>
+
+                  <div className='bg-black text-white inline-block px-4 py-1 my-4 hover:bg-gray-700'>
+                    <Link
+                      as={`/developers/${dev.title[0]}`}
+                      href='/developers/+[title]'
+                    >
+                      Know More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+    {/*  {devs.map((item) => {
             count =  1
             return (
               <div
@@ -142,12 +191,12 @@ export default function Project() {
                     width='100%'
                     height='100%'
                     crop='scale'
-                    publicId={item.imageUrl[0]}
+                    publicId={item.imageUrl}
                   />
                 </div>
                 <div className='w-full md:w-6/12 lg:w-5/12 px-4 order-2'>
                   <h1 className='text-3xl font-normal -mb-4 pt-4'>
-                    {item.title[0]}
+                    {item.title}
                   </h1>
                   <div>
                     <span
@@ -160,7 +209,7 @@ export default function Project() {
                     ></span>
                   </div>
                   <p className='text-xs md:text-sm font-light pt-2'>
-                    {item.description[0]}
+                    {item.description}
                   </p>
 
                   <div className='bg-black text-white inline-block px-4 py-1 my-4 hover:bg-gray-700'>
@@ -176,7 +225,7 @@ export default function Project() {
             
             )
         
-          })}
+          })}  */}
           
        <TrendingProjectsSection
         heading='Trending Residential Listings'
