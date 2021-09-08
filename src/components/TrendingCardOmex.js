@@ -56,7 +56,7 @@ export default function TrendingCardOmex({ item }) {
   };
   return (
     <>
-      {del ? (
+      {item.developer === 'Omaxe' ? (
         <></>
       ) : (
         <>
