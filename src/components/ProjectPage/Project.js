@@ -146,7 +146,7 @@ export default function Project() {
                 </div>
                 <div className='w-full md:w-6/12 lg:w-5/12 px-4 order-2'>
                   <h1 className='text-3xl font-normal -mb-4 pt-4'>
-                    {item.title}
+                    {dev.title[0]}
                   </h1>
                   <div>
                     <span
