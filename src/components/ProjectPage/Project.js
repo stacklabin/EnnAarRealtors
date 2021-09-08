@@ -19,6 +19,8 @@ import {
 } from '@chakra-ui/react'
 
 import TrendingProjectsSection from '../TrendingProjectsSection'
+import TrendingProjectsSectionOmex from '../TrendingProjectsSectionOmex'
+
 export default function Project() {
   const toast = useToast()
   const [name, setName] = useState('')
@@ -173,7 +175,14 @@ export default function Project() {
                   </div>
                 </div>
               </div>
-    {/*  {devs.map((item) => {
+
+       <TrendingProjectsSectionOmex
+        heading='Trending Residential Listings'
+        limit={4}
+        type='residential'
+      />
+        
+      {devs.map((item) => {
             count =  1
             return (
               <div
@@ -226,14 +235,9 @@ export default function Project() {
             
             )
         
-          })}  */}
+          })}  
           
-       <TrendingProjectsSection
-        heading='Trending Residential Listings'
-        limit={4}
-        type='residential'
-      />
-        </div>
+      
       </section>
 
       <TrendingProjectsSection
