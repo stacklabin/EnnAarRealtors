@@ -173,14 +173,16 @@ export default function Project() {
                   </div>
                 </div>
               </div>
-              
-              <TrendingProjectsSection
+            
+            )
+        
+          })}
+          
+       <TrendingProjectsSection
         heading='Trending Residential Listings'
         limit={4}
         type='residential'
       />
-            )
-          })}
         </div>
       </section>
 
