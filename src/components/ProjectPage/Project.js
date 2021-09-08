@@ -141,12 +141,12 @@ export default function Project() {
                     width='100%'
                     height='100%'
                     crop='scale'
-                    publicId={dev.imageUrl[0]}
+                    publicId={devs.imageUrl[0]}
                   />
                 </div>
                 <div className='w-full md:w-6/12 lg:w-5/12 px-4 order-2'>
                   <h1 className='text-3xl font-normal -mb-4 pt-4'>
-                    {dev.title[0]}
+                    {devs.title[0]}
                   </h1>
                   <div>
                     <span
@@ -159,12 +159,12 @@ export default function Project() {
                     ></span>
                   </div>
                   <p className='text-xs md:text-sm font-light pt-2'>
-                    {dev.description[0]}
+                    {devs.description[0]}
                   </p>
 
                   <div className='bg-black text-white inline-block px-4 py-1 my-4 hover:bg-gray-700'>
                     <Link
-                      as={`/developers/${dev.title[0]}`}
+                      as={`/developers/${devs.title[0]}`}
                       href='/developers/+[title]'
                     >
                       Know More
