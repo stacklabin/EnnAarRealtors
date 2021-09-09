@@ -150,7 +150,7 @@ export default function Developer() {
             }
             
             
-            {result.featured ? (
+           {/* {result.featured ? (
                  
                    <TrendingProjectsSectionOmex
                     heading='Trending Residential Listings'
@@ -160,7 +160,14 @@ export default function Developer() {
                  
                 ) : (
                   <></>
-                )}
+                )}  */}
+                
+                
+                   <TrendingProjectsSectionOmex
+                    heading='Trending Residential Listings'
+                    limit='15'
+                    type='residential'
+                  />
             
        
             <section className="halfBackground text-white">
