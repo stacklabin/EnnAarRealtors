@@ -9,7 +9,7 @@ export default function TrendingProjectsSectionOmex({ heading, type }) {
   const [loading, setLoading] = useState(true);
   useEffect(async () => {
     await axios
-      .get("/api/featured-property", { params: { limit: 14 } })
+      .get("/api/featured-property", { params: { limit: 15 } })
       .then((res) => {
         console.log("res is ", res.data);
         setTrendingPropertyList(res.data);
