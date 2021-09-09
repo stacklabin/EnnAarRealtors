@@ -149,11 +149,21 @@ export default function Developer() {
                 ):(<></>)
             }
             
-        <TrendingProjectsSectionOmex
-        heading='Trending Residential Listings'
-        limit='15'
-        type='residential'
-      />
+            item.name
+            
+            {item.name === 'Omaxe New Chandigarh' ? (
+                  <>
+                   <TrendingProjectsSectionOmex
+                    heading='Trending Residential Listings'
+                    limit='15'
+                    type='residential'
+                  />
+                  </>
+                ) : (
+                  <></>
+                )}
+            
+       
             <section className="halfBackground text-white">
                 <img  className="background-image darker" src="/images/img4.jpg" alt="enn arr realtors"/>
                 <div className="text-left md:text-center p-4">
