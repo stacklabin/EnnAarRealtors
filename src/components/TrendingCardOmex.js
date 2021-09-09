@@ -72,7 +72,7 @@ export default function TrendingCardOmex({ item }) {
               />
               {/* <Image layout="responsive" width={100} height={100} className="scale-on-hover-image overflow-hidden object-cover w-full h-full" src={item.imageUrl}/> */}
             </div>
-            <div className="w-8/12 bg-white p-4 flex flex-col justify-between">
+            <div className="w-8/12  p-4 flex flex-col justify-between">
               <div className="text-xs" style={{ position: "relative" }}>
                 <div className="flex flex-wrap justify-between items-center">
                   <span
