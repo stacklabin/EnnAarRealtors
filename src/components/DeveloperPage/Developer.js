@@ -150,7 +150,7 @@ export default function Developer() {
             }
             
             
-            {result.name === 'Omaxe New Chandigarh' ? (
+            {result.featured ? (
                   <>
                    <TrendingProjectsSectionOmex
                     heading='Trending Residential Listings'
