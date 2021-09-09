@@ -33,7 +33,7 @@ export default function TrendingProjectsSectionOmex({ heading, type }) {
           " text-center font-bold text-2xl p-4"
         }
       >
-        All Omex Projects
+        All Omaxe Projects
       </h2>
       <div className="cardContainers flex justify-center flex-wrap">
         {!loading ? (
