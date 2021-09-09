@@ -24,12 +24,12 @@ export default function TrendingProjectsSectionOmex({ heading, type }) {
     <section
       className={
         "p-4 padding-section " +
-        (type === "commercial" ? "bg-gray-300" : "bg-gray-900")
+        (type === "commercial" ? "text-white" : "text-white")
       }
     >
       <h2
         className={
-          (type === "commercial" ? "text-gray-900" : "text-white") +
+          (type === "commercial" ? "text-gray-900" : "text-gray-900") +
           " text-center font-bold text-2xl p-4"
         }
       >
