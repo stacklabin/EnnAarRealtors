@@ -151,13 +151,13 @@ export default function Developer() {
             
             
             {result.featured ? (
-                  <>
+                 
                    <TrendingProjectsSectionOmex
                     heading='Trending Residential Listings'
                     limit='15'
                     type='residential'
                   />
-                  </>
+                 
                 ) : (
                   <></>
                 )}
