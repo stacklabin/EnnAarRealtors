@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import {useRouter} from 'next/router'
 import {useState, useEffect} from 'react'
+import TrendingProjectsSectionOmex from '../TrendingProjectsSectionOmex'
 import axios from 'axios'
 import ContactUs from "../ContactUs"
 import Link from "next/link"
@@ -146,6 +147,12 @@ export default function Developer() {
                     </section>
                 ):(<></>)
             }
+            
+        <TrendingProjectsSectionOmex
+        heading='Trending Residential Listings'
+        limit='15'
+        type='residential'
+      />
             <section className="halfBackground text-white">
                 <img  className="background-image darker" src="/images/img4.jpg" alt="enn arr realtors"/>
                 <div className="text-left md:text-center p-4">
