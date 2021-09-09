@@ -2,6 +2,7 @@ import Head from 'next/head'
 import {useRouter} from 'next/router'
 import {useState, useEffect} from 'react'
 import TrendingProjectsSectionOmex from '../TrendingProjectsSectionOmex'
+import EnquiryFormProperty from '../EnquiryFormProperty'
 import axios from 'axios'
 import ContactUs from "../ContactUs"
 import Link from "next/link"
@@ -159,6 +160,8 @@ export default function Developer() {
                     <h1 className="text-4xl text-gray-200">For Brochure, Contact Us At <br/> <a className="text-white" href="tel:+919888044333">+91-98880-44333</a></h1>
                 </div>
             </section>
+            
+            <EnquiryFormProperty />
             {
                 commercial.length>0?(
                     <section className="p-4">
