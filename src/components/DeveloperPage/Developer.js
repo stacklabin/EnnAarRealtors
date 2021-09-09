@@ -79,7 +79,7 @@ export default function Developer() {
                 />
             </Head>
             <section className="halfBackground text-white">
-                <img className="background-image lighter" src="/images/img3.jpg" alt="enn arr realtors"/>
+                <img className="background-image lighter" src="https://res.cloudinary.com/enn-aar-group/image/upload/v1629091670/developers/WhatsApp_Image_2021-08-15_at_8.54.58_PM_we7unl.jpg" alt="enn arr realtors"/>
             </section>
             <section className="flex justify-center -mt-10 mb-6">
                 <div className="bg-white w-full md:w-8/12 lg:w-6/12 p-4 py-6 rounded-md shadow-xl">
