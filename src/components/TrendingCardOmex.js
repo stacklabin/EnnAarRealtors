@@ -77,8 +77,7 @@ export default function TrendingCardOmex({ item }) {
                 <div className="flex flex-wrap justify-between items-center">
                   <span
                     className="text-xl lg:text-2xl  capitalize font-bold pb-1"
-                    style={{ width: "90%",
-                             color: "black"}}
+                    style={{ width: "90%"}
                   >
                     {item.name}
                   </span>
@@ -88,7 +87,7 @@ export default function TrendingCardOmex({ item }) {
                       right: "5px",
                       top: "5px",
                       cursor: "pointer",
-                      color: "white"
+                    
                     }}
                   >
                     <RWebShare
@@ -124,7 +123,7 @@ export default function TrendingCardOmex({ item }) {
                 )}
                 <div className="w-full text-lg my-2">
                   <GoLocation />
-                  <span className="pl-2  style={{ color: "black"}}>{item.location}</span>
+                  <span className="pl-2 >{item.location}</span>
                 </div>
               </div>
               <div className="flex flex-wrap justify-end  py-2">
