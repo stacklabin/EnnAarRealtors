@@ -78,7 +78,7 @@ export default function TrendingCardOmex({ item }) {
                   <span
                     className="text-xl lg:text-2xl capitalize font-bold pb-1"
                     style={{ width: "90%",
-                             color: "white"}}
+                             color: "black"}}
                   >
                     {item.name}
                   </span>
@@ -124,7 +124,7 @@ export default function TrendingCardOmex({ item }) {
                 )}
                 <div className="w-full text-lg my-2">
                   <GoLocation />
-                  <span className="pl-2"  style={{ color: "white"}}>{item.location}</span>
+                  <span className="pl-2"  style={{ color: "black"}}>{item.location}</span>
                 </div>
               </div>
               <div className="flex flex-wrap justify-end  py-2">
@@ -164,7 +164,7 @@ export default function TrendingCardOmex({ item }) {
                   style={{ width: "200px", background: "black" }}
                   onClick={hadleRoute.bind(this, `/property/${item.name}`)}
                 >
-                  View
+                  Know More
                 </button>
               </div>
             </div>
