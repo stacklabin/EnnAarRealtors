@@ -124,8 +124,11 @@ export default function Project() {
         </div>
       </section>
       <section className='p-4 flex justify-center'>
-       
     
+    
+    
+       
+    <div>
     
          
         
