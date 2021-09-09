@@ -72,11 +72,11 @@ export default function TrendingCardOmex({ item }) {
               />
               {/* <Image layout="responsive" width={100} height={100} className="scale-on-hover-image overflow-hidden object-cover w-full h-full" src={item.imageUrl}/> */}
             </div>
-            <div className="w-8/12  p-4 flex flex-col justify-between">
+            <div className="w-8/12  text-gray-900 p-4 flex flex-col justify-between">
               <div className="text-xs" style={{ position: "relative" }}>
                 <div className="flex flex-wrap justify-between items-center">
                   <span
-                    className="text-xl lg:text-2xl capitalize font-bold pb-1"
+                    className="text-xl lg:text-2xl text-gray-900 capitalize font-bold pb-1"
                     style={{ width: "90%",
                              color: "black"}}
                   >
@@ -124,7 +124,7 @@ export default function TrendingCardOmex({ item }) {
                 )}
                 <div className="w-full text-lg my-2">
                   <GoLocation />
-                  <span className="pl-2"  style={{ color: "black"}}>{item.location}</span>
+                  <span className="pl-2 text-gray-900"  style={{ color: "black"}}>{item.location}</span>
                 </div>
               </div>
               <div className="flex flex-wrap justify-end  py-2">
