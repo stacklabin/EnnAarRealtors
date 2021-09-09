@@ -149,9 +149,8 @@ export default function Developer() {
                 ):(<></>)
             }
             
-            item.name
             
-            {item.name === 'Omaxe New Chandigarh' ? (
+            {result.name === 'Omaxe New Chandigarh' ? (
                   <>
                    <TrendingProjectsSectionOmex
                     heading='Trending Residential Listings'
