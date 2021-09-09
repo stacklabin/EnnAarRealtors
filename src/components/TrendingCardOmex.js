@@ -122,7 +122,7 @@ export default function TrendingCardOmex({ item }) {
                 )}
                 <div className="w-full text-lg my-2">
                   <GoLocation />
-                  <span className="pl-2" text-gray-900>{item.location}</span>
+                  <span className="pl-2 text-gray-900">{item.description}</span>
                 </div>
               </div>
               <div className="flex flex-wrap justify-end  py-2">
