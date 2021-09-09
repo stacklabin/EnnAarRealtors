@@ -38,7 +38,7 @@ export default function TrendingProjectsSectionOmex({ heading, type }) {
       <div className="cardContainers flex justify-center flex-wrap">
         {!loading ? (
           trendingPropertyList.map((item) => {
-            return <TrendingCard key={item._id} item={item} />;
+            return <TrendingCardOmex key={item._id} item={item} />;
           })
         ) : (
           <div className="flex justify-evenly flex-wrap">
