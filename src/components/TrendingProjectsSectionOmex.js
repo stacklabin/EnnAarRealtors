@@ -29,7 +29,7 @@ export default function TrendingProjectsSectionOmex({ heading, type }) {
     >
       <h2
         className={
-          (type === "commercial" ? "text-gray-900" : "text-gray-900") +
+          (type === "commercial" ? "text-gray-300" : "text-gray-300") +
           " text-center font-bold text-2xl p-4"
         }
       >
