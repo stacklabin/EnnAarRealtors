@@ -168,7 +168,7 @@ export default function EnquiryForm({ calledBy },props) {
 
              <img
               className="background-image lighter"
-              src="https://images.unsplash.com/photo-1601752943749-7dd8d89f407a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+              src="https://m.media-amazon.com/images/I/51UW1849rJL._AC_SX679_.jpg"
               alt="enn arr realtors"
             />
            
