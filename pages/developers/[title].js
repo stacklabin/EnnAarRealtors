@@ -5,7 +5,7 @@ export default function DeveloperPage() {
 
     return (
         <div>
-            <Header/>
+        {/* <Header/>  */}
             <Developer/>
             <Footer/>
         </div>
