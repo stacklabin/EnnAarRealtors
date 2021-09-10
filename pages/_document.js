@@ -16,17 +16,7 @@ export default class MyDocument extends Document {
                       src={'https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID'} />
 
 
-          <script>
-
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag(){dataLayer.push(arguments);}
-
-  gtag('js', new Date());
-
-  gtag('config', 'AW-CONVERSION_ID');
-
-</script>
+      
           <script
             dangerouslySetInnerHTML={{
               __html: `
