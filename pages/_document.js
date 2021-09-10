@@ -23,7 +23,7 @@ export default class MyDocument extends Document {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${AW_CONVERSION_ID}', {
+            gtag('config', 'AW_CONVERSION_ID', {
               page_path: window.location.pathname,
             });
             gtag('config', '${GA_TRACKING_ID}', {
