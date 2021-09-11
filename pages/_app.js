@@ -47,16 +47,18 @@ export default function App ({ Component, pageProps }) {
     
     <Script
     strategy='lazyOnload'
-    src={'https://www.googletagmanager.com/gtag/js?id=G-RWZDMBC856'}/>
+    src={`https://www.googletagmanager.com/gtag/js?id=G-RWZDMBC856`}/>
   
   <Script
    strategy ='lazyOnload'>
      {
+     `
      window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-RWZDMBC856');
+`
 
       }
 
