@@ -43,6 +43,8 @@ const TopProgressBar = dynamic(
 export default function App ({ Component, pageProps }) {
   return (
     
+    <>
+    
     <Script
     strategy='lazyOnload'
     src={'https://www.googletagmanager.com/gtag/js?id=G-RWZDMBC856'}/>
@@ -70,5 +72,7 @@ export default function App ({ Component, pageProps }) {
       </ChakraProvider>
       </FacebookPixel>
     </Provider>
+
+</>
   )
 }
