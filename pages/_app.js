@@ -48,7 +48,11 @@ export default function App ({ Component, pageProps }) {
     
     <Script
     strategy='lazyOnload'
-    src={`https://www.googletagmanager.com/gtag/js?id=G-RWZDMBC856`}/>
+    src={`https://www.googletagmanager.com/gtag/js?id=G-WER2GRPXGX`}/>
+  
+  <Script
+    strategy='lazyOnload'
+    src={`https://www.googletagmanager.com/gtag/js?id=AW-986154271`}/>
   
   <Script
    strategy ='lazyOnload'>
@@ -58,7 +62,8 @@ export default function App ({ Component, pageProps }) {
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-RWZDMBC856');
+  gtag('config', 'G-WER2GRPXGX');
+  gtag('config', 'AW-986154271');
 `
 
       }
