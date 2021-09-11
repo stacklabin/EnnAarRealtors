@@ -9,6 +9,7 @@ import {ChakraProvider} from '@chakra-ui/react'
 import Router from 'next/router';
 import NProgress from 'nprogress'; //nprogress module
 import 'nprogress/nprogress.css'; //styles of nprogress
+import Script from "next/script";
 
 // 1. Import the extendTheme function
 import { extendTheme } from "@chakra-ui/react"
@@ -41,6 +42,25 @@ const TopProgressBar = dynamic(
 
 export default function App ({ Component, pageProps }) {
   return (
+    
+    <Script
+    strategy='lazyOnload'
+    src={'https://www.googletagmanager.com/gtag/js?id=G-RWZDMBC856'}/>
+  
+  <Script
+   strategy ='lazyOnload'>
+     {
+     window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RWZDMBC856');
+
+      }
+
+    </Script>
+    
+
    
     <Provider session={pageProps.session}>
       <FacebookPixel>
