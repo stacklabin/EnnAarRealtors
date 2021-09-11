@@ -1,12 +1,17 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { FB_PIXEL_ID } from '../lib/fpixel'
 import { GA_TRACKING_ID } from '../lib/gtag'
+import Iframe from 'react-iframe'
+
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html>
         <Head>
+      
+      
+          <meta name="facebook-domain-verification" content="itz6syi417lhw2pr0x4o26ad09xsv7" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
@@ -33,6 +38,27 @@ export default class MyDocument extends Document {
           `,
             }}
           />
+          
+          
+          <noscript><iIframe url="https://www.googletagmanager.com/ns.html?id=GTM-5GWHLN8"
+          height="0" width="0" style="display:none;visibility:hidden"></Iframe></noscript>
+
+
+
+    <script>
+       dangerouslySetInnerHTML={{
+              __html: `
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GWHLN8');
+              `,
+            }}/>
+      
+      
+          
+          
           {/* Global Site Code Pixel - Facebook Pixel */}
           <script
             dangerouslySetInnerHTML={{
@@ -49,6 +75,7 @@ export default class MyDocument extends Document {
               `,
             }}
           />
+          
           <noscript>
             <img
               height="1"
