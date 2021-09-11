@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=G-RWZDMBC856`}
           />
           
          {/* <script async
@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
             gtag('config', 'AW-986154271', {
               page_path: window.location.pathname,
             });
-            gtag('config', '${GA_TRACKING_ID}', {
+            gtag('config', 'G-RWZDMBC856', {
               page_path: window.location.pathname,
             });
           `,
