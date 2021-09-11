@@ -9,7 +9,8 @@ import {ChakraProvider} from '@chakra-ui/react'
 import Router from 'next/router';
 import NProgress from 'nprogress'; //nprogress module
 import 'nprogress/nprogress.css'; //styles of nprogress
-import Script from "next/script";
+import Script  from 'next/experimental-script'
+
 
 // 1. Import the extendTheme function
 import { extendTheme } from "@chakra-ui/react"
