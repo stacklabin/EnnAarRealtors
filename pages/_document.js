@@ -40,7 +40,7 @@ export default class MyDocument extends Document {
           />
           
           
-          <noscript><iIframe url="https://www.googletagmanager.com/ns.html?id=GTM-5GWHLN8"
+          <noscript><Iframe url="https://www.googletagmanager.com/ns.html?id=GTM-5GWHLN8"
           height="0" width="0" style="display:none;visibility:hidden"></Iframe></noscript>
 
 
