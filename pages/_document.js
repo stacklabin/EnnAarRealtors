@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=G-RWZDMBC856`}
+            src={`https://www.googletagmanager.com/gtag/js?id=G-WER2GRPXGX`}
           />
           
          {/* <script async
@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
             gtag('config', 'AW-986154271', {
               page_path: window.location.pathname,
             });
-            gtag('config', 'G-RWZDMBC856', {
+            gtag('config', 'G-WER2GRPXGX', {
               page_path: window.location.pathname,
             });
           `,
